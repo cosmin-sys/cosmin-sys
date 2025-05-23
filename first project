@@ -1,0 +1,20 @@
+#This code was made after 6 weeks of course
+
+import time
+secs = input("Enter time in seconds: ")
+
+while True:
+    try:
+        secs = int(secs) #if you enter an integer, this condition will break and go for the next step (while secs)
+        break
+    # If you enter a str the code will print the follow message
+    except:
+        secs = input("Please enter a number: ")
+
+while secs > 0:
+    print(secs)
+    #the countdown start to count
+    secs -= 1
+    time.sleep(1)
+
+print("Time expired!")
